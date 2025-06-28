@@ -139,11 +139,16 @@ python maze.py maze.txt
 
 ### Maze 1 (maze.txt) - Simple 7x7 Maze
 
-![Maze 1 DFS Solution](maze_DFS.png)
-*Maze 1 solved using Depth-First Search*
-
-![Maze 1 BFS Solution](maze_BFS.png)
-*Maze 1 solved using Breadth-First Search*
+<div style="display: flex; justify-content: space-around;">
+  <div>
+    <img src="maze_DFS.png" alt="Maze 1 DFS Solution" width="400"/>
+    <p><em>Maze 1 solved using Depth-First Search</em></p>
+  </div>
+  <div>
+    <img src="maze_BFS.png" alt="Maze 1 BFS Solution" width="400"/>
+    <p><em>Maze 1 solved using Breadth-First Search</em></p>
+  </div>
+</div>
 
 **DFS vs BFS Analysis for Maze 1:**
 - **DFS**: Explores deeper paths first, may find longer solution but uses less memory
@@ -153,11 +158,16 @@ python maze.py maze.txt
 
 ### Maze 2 (maze2.txt) - Complex Lecture Maze
 
-![Maze 2 DFS Solution](maze2_dfs.png)
-*Maze 2 solved using Depth-First Search*
-
-![Maze 2 BFS Solution](maze2_bfs.png)
-*Maze 2 solved using Breadth-First Search*
+<div style="display: flex; justify-content: space-around;">
+  <div>
+    <img src="maze2_DFS.png" alt="Maze 2 DFS Solution" width="400"/>
+    <p><em>Maze 2 solved using Depth-First Search</em></p>
+  </div>
+  <div>
+    <img src="maze2_BFS.png" alt="Maze 2 BFS Solution" width="400"/>
+    <p><em>Maze 2 solved using Breadth-First Search</em></p>
+  </div>
+</div>
 
 **DFS vs BFS Analysis for Maze 2:**
 - **DFS**: May find suboptimal path quickly, explores one branch completely
@@ -165,13 +175,18 @@ python maze.py maze.txt
 - **Performance**: Significant difference in solution quality for complex mazes
 - **Memory Usage**: DFS uses less memory, BFS requires more space for frontier
 
-### Maze 3 (maze3.txt) - Large Test Maze
+### Maze 3 (maze3.txt) - Test Maze
 
-![Maze 3 DFS Solution](maze3_dfs.png)
-*Maze 3 solved using Depth-First Search*
-
-![Maze 3 BFS Solution](maze3_bfs.png)
-*Maze 3 solved using Breadth-First Search*
+<div style="display: flex; justify-content: space-around;">
+  <div>
+    <img src="maze3_DFS.png" alt="Maze 3 DFS Solution" width="400"/>
+    <p><em>Maze 3 solved using Depth-First Search</em></p>
+  </div>
+  <div>
+    <img src="maze3_BFS.png" alt="Maze 3 BFS Solution" width="400"/>
+    <p><em>Maze 3 solved using Breadth-First Search</em></p>
+  </div>
+</div>
 
 **DFS vs BFS Analysis for Maze 3:**
 - **DFS**: Performance varies greatly depending on maze structure
@@ -179,14 +194,24 @@ python maze.py maze.txt
 - **Scalability**: BFS memory requirements grow exponentially with maze size
 - **Practical Use**: DFS better for memory-constrained environments
 
-### Maze 4 (maze4.txt) - Another Large Test Maze
+### Maze 4 (maze4.txt) - Another Test Maze
 
-![Maze 4 DFS Solution](maze4_dfs.png)
-*Maze 4 solved using Depth-First Search*
+<div style="display: flex; justify-content: space-around;">
+  <div>
+    <img src="maze4_DFS.png" alt="Maze 4 DFS Solution" width="400"/>
+    <p><em>Maze 4 solved using Depth-First Search</em></p>
+  </div>
+  <div>
+    <img src="maze4_BFS.png" alt="Maze 4 BFS Solution" width="400"/>
+    <p><em>Maze 4 solved using Breadth-First Search</em></p>
+  </div>
+</div>
 
-![Maze 4 BFS Solution](maze4_bfs.png)
-*Maze 4 solved using Breadth-First Search*
-
+**DFS vs BFS Analysis for Maze 4:**
+- **DFS**: Quick exploration but may miss optimal paths
+- **BFS**: Systematic approach ensures shortest solution
+- **Comparison**: Clear visual difference in exploration patterns and solution paths
+- **Efficiency**: Trade-off between memory usage and solution optimality
 
 ## Algorithm Comparison Table
 
