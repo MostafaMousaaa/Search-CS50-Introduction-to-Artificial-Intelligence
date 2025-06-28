@@ -109,7 +109,7 @@ class Maze():
         self.num_explored = 0
 
         start = Node(state=self.start, parent=None, action=None)
-        frontier = StackFrontier()  # Change to QueueFrontier() for BFS
+        frontier = QueueFrontier()  # Change to QueueFrontier() for BFS
         frontier.add(start)
 
         self.explored = set()
@@ -194,5 +194,5 @@ print("Solution:")
 m.print()
 
 # Save maze solution as PNG
-m.save_image("maze.png", show_solution=True, show_explored=True)
-print("Maze solution saved as maze.png")
+m.save_image("maze4_BFS.png", show_solution=True, show_explored=True)
+print("Maze solution saved as maze4_BFS.png")
