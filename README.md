@@ -132,7 +132,7 @@ python maze.py maze.txt
 
 | Depth-First Search (DFS) | Breadth-First Search (BFS) |
 |:-------------------------:|:---------------------------:|
-| <img src="maze_DFS.png" alt="Maze 1 DFS Solution" width="400"/> | <img src="maze_BFS.png" alt="Maze 1 BFS Solution" width="400"/> |
+| <img src="images/dfs/maze_DFS.png" alt="Maze 1 DFS Solution" width="400"/> | <img src="images/bfs/maze_BFS.png" alt="Maze 1 BFS Solution" width="400"/> |
 | *Maze 1 solved using Depth-First Search* | *Maze 1 solved using Breadth-First Search* |
 
 **DFS vs BFS Analysis for Maze 1:**
@@ -145,7 +145,7 @@ python maze.py maze.txt
 
 | Depth-First Search (DFS) | Breadth-First Search (BFS) |
 |:-------------------------:|:---------------------------:|
-| <img src="maze2_DFS.png" alt="Maze 2 DFS Solution" width="400"/> | <img src="maze2_BFS.png" alt="Maze 2 BFS Solution" width="400"/> |
+| <img src="images/dfs/maze2_DFS.png" alt="Maze 2 DFS Solution" width="400"/> | <img src="images/bfs/maze2_BFS.png" alt="Maze 2 BFS Solution" width="400"/> |
 | *Maze 2 solved using Depth-First Search* | *Maze 2 solved using Breadth-First Search* |
 
 **DFS vs BFS Analysis for Maze 2:**
@@ -158,7 +158,7 @@ python maze.py maze.txt
 
 | Depth-First Search (DFS) | Breadth-First Search (BFS) |
 |:-------------------------:|:---------------------------:|
-| <img src="maze3_DFS.png" alt="Maze 3 DFS Solution" width="400"/> | <img src="maze3_BFS.png" alt="Maze 3 BFS Solution" width="400"/> |
+| <img src="images/dfs/maze3_DFS.png" alt="Maze 3 DFS Solution" width="400"/> | <img src="images/bfs/maze3_BFS.png" alt="Maze 3 BFS Solution" width="400"/> |
 | *Maze 3 solved using Depth-First Search* | *Maze 3 solved using Breadth-First Search* |
 
 **DFS vs BFS Analysis for Maze 3:**
@@ -171,7 +171,7 @@ python maze.py maze.txt
 
 | Depth-First Search (DFS) | Breadth-First Search (BFS) |
 |:-------------------------:|:---------------------------:|
-| <img src="maze4_DFS.png" alt="Maze 4 DFS Solution" width="400"/> | <img src="maze4_BFS.png" alt="Maze 4 BFS Solution" width="400"/> |
+| <img src="images/dfs/maze4_DFS.png" alt="Maze 4 DFS Solution" width="400"/> | <img src="images/bfs/maze4_BFS.png" alt="Maze 4 BFS Solution" width="400"/> |
 | *Maze 4 solved using Depth-First Search* | *Maze 4 solved using Breadth-First Search* |
 
 **DFS vs BFS Analysis for Maze 4:**
