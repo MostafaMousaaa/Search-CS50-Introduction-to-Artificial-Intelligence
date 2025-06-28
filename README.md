@@ -141,11 +141,11 @@ python maze.py maze.txt
 
 <div style="display: flex; justify-content: space-around;">
   <div>
-    <img src="maze_DFS.png" alt="Maze 1 DFS Solution" width="400"/>
+    <img src="maze_DFS.png" alt="Maze 1 DFS Solution" width="200"/>
     <p><em>Maze 1 solved using Depth-First Search</em></p>
   </div>
   <div>
-    <img src="maze_BFS.png" alt="Maze 1 BFS Solution" width="400"/>
+    <img src="maze_BFS.png" alt="Maze 1 BFS Solution" width="200"/>
     <p><em>Maze 1 solved using Breadth-First Search</em></p>
   </div>
 </div>
@@ -160,11 +160,11 @@ python maze.py maze.txt
 
 <div style="display: flex; justify-content: space-around;">
   <div>
-    <img src="maze2_DFS.png" alt="Maze 2 DFS Solution" width="400"/>
+    <img src="maze2_DFS.png" alt="Maze 2 DFS Solution" width="200"/>
     <p><em>Maze 2 solved using Depth-First Search</em></p>
   </div>
   <div>
-    <img src="maze2_BFS.png" alt="Maze 2 BFS Solution" width="400"/>
+    <img src="maze2_BFS.png" alt="Maze 2 BFS Solution" width="200"/>
     <p><em>Maze 2 solved using Breadth-First Search</em></p>
   </div>
 </div>
@@ -179,11 +179,11 @@ python maze.py maze.txt
 
 <div style="display: flex; justify-content: space-around;">
   <div>
-    <img src="maze3_DFS.png" alt="Maze 3 DFS Solution" width="400"/>
+    <img src="maze3_DFS.png" alt="Maze 3 DFS Solution" width="200"/>
     <p><em>Maze 3 solved using Depth-First Search</em></p>
   </div>
   <div>
-    <img src="maze3_BFS.png" alt="Maze 3 BFS Solution" width="400"/>
+    <img src="maze3_BFS.png" alt="Maze 3 BFS Solution" width="200"/>
     <p><em>Maze 3 solved using Breadth-First Search</em></p>
   </div>
 </div>
@@ -198,11 +198,11 @@ python maze.py maze.txt
 
 <div style="display: flex; justify-content: space-around;">
   <div>
-    <img src="maze4_DFS.png" alt="Maze 4 DFS Solution" width="400"/>
+    <img src="maze4_DFS.png" alt="Maze 4 DFS Solution" width="200"/>
     <p><em>Maze 4 solved using Depth-First Search</em></p>
   </div>
   <div>
-    <img src="maze4_BFS.png" alt="Maze 4 BFS Solution" width="400"/>
+    <img src="maze4_BFS.png" alt="Maze 4 BFS Solution" width="200"/>
     <p><em>Maze 4 solved using Breadth-First Search</em></p>
   </div>
 </div>
@@ -215,43 +215,43 @@ python maze.py maze.txt
 
 ## Algorithm Comparison Table
 
-| Algorithm | Completeness | Optimality | Time Complexity | Space Complexity | Pros | Cons |
-|-----------|--------------|------------|-----------------|------------------|------|------|
-| **Depth-First Search (DFS)** | Yes* | No | O(b^m) | O(bm) | • Low memory usage<br>• Simple implementation<br>• Good for deep solutions<br>• Fast when solution is deep | • Not optimal<br>• Can get stuck in infinite paths<br>• Poor performance if solution is shallow<br>• May explore irrelevant deep paths |
-| **Breadth-First Search (BFS)** | Yes | Yes** | O(b^d) | O(b^d) | • Finds optimal solution<br>• Systematic exploration<br>• Good for shallow solutions<br>• Predictable behavior | • High memory usage<br>• Slower for deep solutions<br>• Exponential space growth<br>• May be overkill for some problems |
-| **Greedy Best-First** | No | No | O(b^m) | O(b^m) | • Fast with good heuristic<br>• Uses domain knowledge<br>• Often finds solutions quickly<br>• Low memory in best case | • Not complete or optimal<br>• Depends on heuristic quality<br>• Can get stuck in local optima<br>• May miss optimal solutions |
-| **A* Search** | Yes | Yes** | O(b^d) | O(b^d) | • Optimal and complete<br>• Uses heuristic efficiently<br>• Best of both worlds<br>• Widely applicable | • Requires admissible heuristic<br>• High memory usage<br>• Complex to implement<br>• Heuristic design challenge |
-| **Minimax** | Yes | Yes | O(b^m) | O(bm) | • Optimal against optimal opponent<br>• Theoretical foundation<br>• Works for any zero-sum game<br>• Provides game-theoretic solution | • Exponential time complexity<br>• Impractical for large games<br>• Assumes optimal opponent<br>• No pruning optimization |
-| **Alpha-Beta Pruning** | Yes | Yes | O(b^(m/2))*** | O(bm) | • Same result as minimax<br>• Significant speedup<br>• Allows deeper search<br>• Easy to implement | • Still exponential complexity<br>• Depends on move ordering<br>• May not help in worst case<br>• Limited to zero-sum games |
+| Algorithm | Complete | Optimal | Time Complexity | Space Complexity | Pros | Cons |
+|-----------|----------|---------|-----------------|------------------|------|------|
+| **Depth-First Search (DFS)** | Yes¹ | No | O(b^m) | O(bm) | Low memory usage<br>Simple implementation<br>Good for deep solutions<br>Fast when solution is deep | Not optimal<br>Can get stuck in infinite paths<br>Poor performance if solution is shallow<br>May explore irrelevant deep paths |
+| **Breadth-First Search (BFS)** | Yes | Yes² | O(b^d) | O(b^d) | Finds optimal solution<br>Systematic exploration<br>Good for shallow solutions<br>Predictable behavior | High memory usage<br>Slower for deep solutions<br>Exponential space growth<br>May be overkill for some problems |
 
 **Notes:**
-- \* Complete in finite state spaces
-- \** Optimal for unit step costs
-- \*** Best case scenario with optimal move ordering
+- ¹ Complete in finite state spaces
+- ² Optimal for unit step costs
 - b = branching factor, m = maximum depth, d = depth of optimal solution
 
 ### When to Use Each Algorithm:
 
-1. **Use DFS when:**
-   - Memory is limited
-   - Solution is likely to be deep
-   - Any solution is acceptable (optimality not required)
-   - Exploring all paths is needed
+**Use DFS when:**
+- Memory is limited
+- Solution is likely to be deep
+- Any solution is acceptable (optimality not required)
+- Exploring all paths is needed
 
-2. **Use BFS when:**
-   - Optimal solution is required
-   - Solution is likely to be shallow
-   - Memory is not a constraint
-   - Step costs are uniform
+**Use BFS when:**
+- Optimal solution is required
+- Solution is likely to be shallow
+- Memory is not a constraint
+- Step costs are uniform
 
-3. **Use A* when:**
-   - Optimal solution is required
-   - Good heuristic is available
-   - Want to minimize nodes explored
-   - Can afford the memory cost
+## Key Takeaways
 
-4. **Use Minimax/Alpha-Beta when:**
-   - Dealing with adversarial scenarios
+1. **Choice of Algorithm**: Depends on problem constraints (optimality, time, space)
+2. **Heuristics**: Can significantly improve search efficiency when admissible
+3. **Trade-offs**: Between optimality, completeness, time, and space complexity
+4. **Adversarial Settings**: Require different approaches (minimax, alpha-beta pruning)
+5. **Practical Considerations**: Depth-limiting and evaluation functions for complex problems
+
+## References
+
+- CS50's Introduction to Artificial Intelligence
+- Search
+- Harvard University / edX
    - Game-playing applications
    - Perfect information games
    - Need optimal strategy
