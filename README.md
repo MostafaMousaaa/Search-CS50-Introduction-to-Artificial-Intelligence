@@ -118,15 +118,6 @@ For games that are too complex for full minimax search, depth-limited minimax st
 
 ## Implementation
 
-This repository includes:
-
-### Files:
-- `maze.py`: Implementation of maze solver with DFS and BFS
-- `maze.txt`: Simple maze for testing algorithms
-- `maze2.txt`: Complex maze from CS50 lecture
-- `maze3.txt`: Additional test maze
-- `maze4.txt`: Additional test maze
-
 ### Usage:
 ```bash
 # Run DFS (default)
@@ -141,7 +132,7 @@ python maze.py maze.txt
 
 | Depth-First Search (DFS) | Breadth-First Search (BFS) |
 |:-------------------------:|:---------------------------:|
-| <img src="maze_DFS.png" alt="Maze 1 DFS Solution" width="300"/> | <img src="maze_BFS.png" alt="Maze 1 BFS Solution" width="300"/> |
+| <img src="maze_DFS.png" alt="Maze 1 DFS Solution" width="400"/> | <img src="maze_BFS.png" alt="Maze 1 BFS Solution" width="400"/> |
 | *Maze 1 solved using Depth-First Search* | *Maze 1 solved using Breadth-First Search* |
 
 **DFS vs BFS Analysis for Maze 1:**
@@ -154,7 +145,7 @@ python maze.py maze.txt
 
 | Depth-First Search (DFS) | Breadth-First Search (BFS) |
 |:-------------------------:|:---------------------------:|
-| <img src="maze2_DFS.png" alt="Maze 2 DFS Solution" width="300"/> | <img src="maze2_BFS.png" alt="Maze 2 BFS Solution" width="300"/> |
+| <img src="maze2_DFS.png" alt="Maze 2 DFS Solution" width="400"/> | <img src="maze2_BFS.png" alt="Maze 2 BFS Solution" width="400"/> |
 | *Maze 2 solved using Depth-First Search* | *Maze 2 solved using Breadth-First Search* |
 
 **DFS vs BFS Analysis for Maze 2:**
@@ -167,7 +158,7 @@ python maze.py maze.txt
 
 | Depth-First Search (DFS) | Breadth-First Search (BFS) |
 |:-------------------------:|:---------------------------:|
-| <img src="maze3_DFS.png" alt="Maze 3 DFS Solution" width="300"/> | <img src="maze3_BFS.png" alt="Maze 3 BFS Solution" width="300"/> |
+| <img src="maze3_DFS.png" alt="Maze 3 DFS Solution" width="400"/> | <img src="maze3_BFS.png" alt="Maze 3 BFS Solution" width="400"/> |
 | *Maze 3 solved using Depth-First Search* | *Maze 3 solved using Breadth-First Search* |
 
 **DFS vs BFS Analysis for Maze 3:**
@@ -180,7 +171,7 @@ python maze.py maze.txt
 
 | Depth-First Search (DFS) | Breadth-First Search (BFS) |
 |:-------------------------:|:---------------------------:|
-| <img src="maze4_DFS.png" alt="Maze 4 DFS Solution" width="300"/> | <img src="maze4_BFS.png" alt="Maze 4 BFS Solution" width="300"/> |
+| <img src="maze4_DFS.png" alt="Maze 4 DFS Solution" width="400"/> | <img src="maze4_BFS.png" alt="Maze 4 BFS Solution" width="400"/> |
 | *Maze 4 solved using Depth-First Search* | *Maze 4 solved using Breadth-First Search* |
 
 **DFS vs BFS Analysis for Maze 4:**
@@ -214,23 +205,6 @@ python maze.py maze.txt
 - Solution is likely to be shallow
 - Memory is not a constraint
 - Step costs are uniform
-
-## Key Takeaways
-
-1. **Choice of Algorithm**: Depends on problem constraints (optimality, time, space)
-2. **Heuristics**: Can significantly improve search efficiency when admissible
-3. **Trade-offs**: Between optimality, completeness, time, and space complexity
-4. **Adversarial Settings**: Require different approaches (minimax, alpha-beta pruning)
-5. **Practical Considerations**: Depth-limiting and evaluation functions for complex problems
-
-## References
-
-- CS50's Introduction to Artificial Intelligence
-- Search
-- Harvard University / edX
-   - Game-playing applications
-   - Perfect information games
-   - Need optimal strategy
 
 ## Key Takeaways
 
