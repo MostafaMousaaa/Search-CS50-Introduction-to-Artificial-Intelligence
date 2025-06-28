@@ -122,8 +122,10 @@ This repository includes:
 
 ### Files:
 - `maze.py`: Implementation of maze solver with DFS and BFS
-- `maze.txt`: Sample maze for testing algorithms
-- `maze.png`: Visual output of the maze solution
+- `maze.txt`: Simple maze for testing algorithms
+- `maze2.txt`: Complex maze from CS50 lecture
+- `maze3.txt`: Additional test maze
+- `maze4.txt`: Additional test maze
 
 ### Usage:
 ```bash
@@ -133,18 +135,101 @@ python maze.py maze.txt
 # For BFS, change StackFrontier() to QueueFrontier() in maze.py
 ```
 
-### Maze Visualization:
-The program generates a PNG image showing:
-- **Red**: Start position (A)
-- **Green**: Goal position (B)
-- **Yellow**: Solution path
-- **Light red**: Explored cells
-- **Dark gray**: Walls
-- **Light gray**: Empty spaces
+## Maze Problems and Algorithm Comparison
 
-![Maze Solution](maze2.png)
+### Maze 1 (maze.txt) - Simple 7x7 Maze
 
-*Example output showing the maze solution path found by the search algorithm*
+![Maze 1 DFS Solution](maze_DFS.png)
+*Maze 1 solved using Depth-First Search*
+
+![Maze 1 BFS Solution](maze_BFS.png)
+*Maze 1 solved using Breadth-First Search*
+
+**DFS vs BFS Analysis for Maze 1:**
+- **DFS**: Explores deeper paths first, may find longer solution but uses less memory
+- **BFS**: Finds optimal (shortest) path, explores more nodes but guarantees shortest solution
+- **States Explored**: BFS typically explores more states but finds optimal path
+- **Solution Quality**: BFS finds shorter path in terms of steps
+
+### Maze 2 (maze2.txt) - Complex Lecture Maze
+
+![Maze 2 DFS Solution](maze2_dfs.png)
+*Maze 2 solved using Depth-First Search*
+
+![Maze 2 BFS Solution](maze2_bfs.png)
+*Maze 2 solved using Breadth-First Search*
+
+**DFS vs BFS Analysis for Maze 2:**
+- **DFS**: May find suboptimal path quickly, explores one branch completely
+- **BFS**: Systematically explores all possibilities at each level, finds optimal solution
+- **Performance**: Significant difference in solution quality for complex mazes
+- **Memory Usage**: DFS uses less memory, BFS requires more space for frontier
+
+### Maze 3 (maze3.txt) - Large Test Maze
+
+![Maze 3 DFS Solution](maze3_dfs.png)
+*Maze 3 solved using Depth-First Search*
+
+![Maze 3 BFS Solution](maze3_bfs.png)
+*Maze 3 solved using Breadth-First Search*
+
+**DFS vs BFS Analysis for Maze 3:**
+- **DFS**: Performance varies greatly depending on maze structure
+- **BFS**: Consistent performance, always finds optimal path
+- **Scalability**: BFS memory requirements grow exponentially with maze size
+- **Practical Use**: DFS better for memory-constrained environments
+
+### Maze 4 (maze4.txt) - Another Large Test Maze
+
+![Maze 4 DFS Solution](maze4_dfs.png)
+*Maze 4 solved using Depth-First Search*
+
+![Maze 4 BFS Solution](maze4_bfs.png)
+*Maze 4 solved using Breadth-First Search*
+
+
+## Algorithm Comparison Table
+
+| Algorithm | Completeness | Optimality | Time Complexity | Space Complexity | Pros | Cons |
+|-----------|--------------|------------|-----------------|------------------|------|------|
+| **Depth-First Search (DFS)** | Yes* | No | O(b^m) | O(bm) | • Low memory usage<br>• Simple implementation<br>• Good for deep solutions<br>• Fast when solution is deep | • Not optimal<br>• Can get stuck in infinite paths<br>• Poor performance if solution is shallow<br>• May explore irrelevant deep paths |
+| **Breadth-First Search (BFS)** | Yes | Yes** | O(b^d) | O(b^d) | • Finds optimal solution<br>• Systematic exploration<br>• Good for shallow solutions<br>• Predictable behavior | • High memory usage<br>• Slower for deep solutions<br>• Exponential space growth<br>• May be overkill for some problems |
+| **Greedy Best-First** | No | No | O(b^m) | O(b^m) | • Fast with good heuristic<br>• Uses domain knowledge<br>• Often finds solutions quickly<br>• Low memory in best case | • Not complete or optimal<br>• Depends on heuristic quality<br>• Can get stuck in local optima<br>• May miss optimal solutions |
+| **A* Search** | Yes | Yes** | O(b^d) | O(b^d) | • Optimal and complete<br>• Uses heuristic efficiently<br>• Best of both worlds<br>• Widely applicable | • Requires admissible heuristic<br>• High memory usage<br>• Complex to implement<br>• Heuristic design challenge |
+| **Minimax** | Yes | Yes | O(b^m) | O(bm) | • Optimal against optimal opponent<br>• Theoretical foundation<br>• Works for any zero-sum game<br>• Provides game-theoretic solution | • Exponential time complexity<br>• Impractical for large games<br>• Assumes optimal opponent<br>• No pruning optimization |
+| **Alpha-Beta Pruning** | Yes | Yes | O(b^(m/2))*** | O(bm) | • Same result as minimax<br>• Significant speedup<br>• Allows deeper search<br>• Easy to implement | • Still exponential complexity<br>• Depends on move ordering<br>• May not help in worst case<br>• Limited to zero-sum games |
+
+**Notes:**
+- \* Complete in finite state spaces
+- \** Optimal for unit step costs
+- \*** Best case scenario with optimal move ordering
+- b = branching factor, m = maximum depth, d = depth of optimal solution
+
+### When to Use Each Algorithm:
+
+1. **Use DFS when:**
+   - Memory is limited
+   - Solution is likely to be deep
+   - Any solution is acceptable (optimality not required)
+   - Exploring all paths is needed
+
+2. **Use BFS when:**
+   - Optimal solution is required
+   - Solution is likely to be shallow
+   - Memory is not a constraint
+   - Step costs are uniform
+
+3. **Use A* when:**
+   - Optimal solution is required
+   - Good heuristic is available
+   - Want to minimize nodes explored
+   - Can afford the memory cost
+
+4. **Use Minimax/Alpha-Beta when:**
+   - Dealing with adversarial scenarios
+   - Game-playing applications
+   - Perfect information games
+   - Need optimal strategy
 
 ## Key Takeaways
 
