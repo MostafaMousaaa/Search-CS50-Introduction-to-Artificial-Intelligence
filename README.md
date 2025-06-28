@@ -139,16 +139,10 @@ python maze.py maze.txt
 
 ### Maze 1 (maze.txt) - Simple 7x7 Maze
 
-<div style="display: flex; justify-content: space-around;">
-  <div>
-    <img src="maze_DFS.png" alt="Maze 1 DFS Solution" width="200"/>
-    <p><em>Maze 1 solved using Depth-First Search</em></p>
-  </div>
-  <div>
-    <img src="maze_BFS.png" alt="Maze 1 BFS Solution" width="200"/>
-    <p><em>Maze 1 solved using Breadth-First Search</em></p>
-  </div>
-</div>
+| Depth-First Search (DFS) | Breadth-First Search (BFS) |
+|:-------------------------:|:---------------------------:|
+| <img src="maze_DFS.png" alt="Maze 1 DFS Solution" width="300"/> | <img src="maze_BFS.png" alt="Maze 1 BFS Solution" width="300"/> |
+| *Maze 1 solved using Depth-First Search* | *Maze 1 solved using Breadth-First Search* |
 
 **DFS vs BFS Analysis for Maze 1:**
 - **DFS**: Explores deeper paths first, may find longer solution but uses less memory
@@ -158,16 +152,10 @@ python maze.py maze.txt
 
 ### Maze 2 (maze2.txt) - Complex Lecture Maze
 
-<div style="display: flex; justify-content: space-around;">
-  <div>
-    <img src="maze2_DFS.png" alt="Maze 2 DFS Solution" width="200"/>
-    <p><em>Maze 2 solved using Depth-First Search</em></p>
-  </div>
-  <div>
-    <img src="maze2_BFS.png" alt="Maze 2 BFS Solution" width="200"/>
-    <p><em>Maze 2 solved using Breadth-First Search</em></p>
-  </div>
-</div>
+| Depth-First Search (DFS) | Breadth-First Search (BFS) |
+|:-------------------------:|:---------------------------:|
+| <img src="maze2_DFS.png" alt="Maze 2 DFS Solution" width="300"/> | <img src="maze2_BFS.png" alt="Maze 2 BFS Solution" width="300"/> |
+| *Maze 2 solved using Depth-First Search* | *Maze 2 solved using Breadth-First Search* |
 
 **DFS vs BFS Analysis for Maze 2:**
 - **DFS**: May find suboptimal path quickly, explores one branch completely
@@ -177,16 +165,10 @@ python maze.py maze.txt
 
 ### Maze 3 (maze3.txt) - Test Maze
 
-<div style="display: flex; justify-content: space-around;">
-  <div>
-    <img src="maze3_DFS.png" alt="Maze 3 DFS Solution" width="200"/>
-    <p><em>Maze 3 solved using Depth-First Search</em></p>
-  </div>
-  <div>
-    <img src="maze3_BFS.png" alt="Maze 3 BFS Solution" width="200"/>
-    <p><em>Maze 3 solved using Breadth-First Search</em></p>
-  </div>
-</div>
+| Depth-First Search (DFS) | Breadth-First Search (BFS) |
+|:-------------------------:|:---------------------------:|
+| <img src="maze3_DFS.png" alt="Maze 3 DFS Solution" width="300"/> | <img src="maze3_BFS.png" alt="Maze 3 BFS Solution" width="300"/> |
+| *Maze 3 solved using Depth-First Search* | *Maze 3 solved using Breadth-First Search* |
 
 **DFS vs BFS Analysis for Maze 3:**
 - **DFS**: Performance varies greatly depending on maze structure
@@ -196,16 +178,10 @@ python maze.py maze.txt
 
 ### Maze 4 (maze4.txt) - Another Test Maze
 
-<div style="display: flex; justify-content: space-around;">
-  <div>
-    <img src="maze4_DFS.png" alt="Maze 4 DFS Solution" width="200"/>
-    <p><em>Maze 4 solved using Depth-First Search</em></p>
-  </div>
-  <div>
-    <img src="maze4_BFS.png" alt="Maze 4 BFS Solution" width="200"/>
-    <p><em>Maze 4 solved using Breadth-First Search</em></p>
-  </div>
-</div>
+| Depth-First Search (DFS) | Breadth-First Search (BFS) |
+|:-------------------------:|:---------------------------:|
+| <img src="maze4_DFS.png" alt="Maze 4 DFS Solution" width="300"/> | <img src="maze4_BFS.png" alt="Maze 4 BFS Solution" width="300"/> |
+| *Maze 4 solved using Depth-First Search* | *Maze 4 solved using Breadth-First Search* |
 
 **DFS vs BFS Analysis for Maze 4:**
 - **DFS**: Quick exploration but may miss optimal paths
