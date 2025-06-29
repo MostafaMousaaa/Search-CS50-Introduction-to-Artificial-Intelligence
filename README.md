@@ -94,6 +94,44 @@ A* combines the benefits of Dijkstra's algorithm and Greedy Best-First Search. I
 - Optimally efficient
 - Space complexity can be exponential
 
+## Informed Search Algorithms Comparison
+
+| Aspect | Greedy Best-First Search | A* Search |
+|--------|-------------------------|-----------|
+| **Evaluation Function** | f(n) = h(n) | f(n) = g(n) + h(n) |
+| **Completeness** | No¹ | Yes |
+| **Optimality** | No | Yes² |
+| **Time Complexity** | O(b^m) | O(b^d) |
+| **Space Complexity** | O(b^m) | O(b^d) |
+| **Heuristic Usage** | Only h(n) | Both g(n) and h(n) |
+| **Search Strategy** | Always chooses most promising node | Balances path cost and heuristic |
+| **Memory Efficiency** | Medium | Medium |
+| **Best For** | Quick approximate solutions | Optimal pathfinding |
+| **Worst Case** | Can get stuck in local minima | Explores more nodes but finds optimal path |
+| **Implementation** | Simpler | More complex |
+| **Performance** | Fast but may be suboptimal | Slower but guaranteed optimal |
+
+**Notes:**
+- ¹ May not find solution if heuristic leads to dead ends
+- ² Optimal when using admissible heuristics (never overestimates true cost)
+
+### Key Differences:
+
+**Greedy Best-First Search:**
+- **Advantage**: Very fast, uses minimal memory
+- **Disadvantage**: Not guaranteed to find optimal path, can get stuck
+- **Use Case**: When speed is more important than optimality
+
+**A* Search:**
+- **Advantage**: Guaranteed to find optimal path, systematic exploration
+- **Disadvantage**: Slower, explores more nodes
+- **Use Case**: When optimal solution is required
+
+### Practical Example:
+In our pathfinding game demo, you can observe:
+- **Greedy**: Explores fewer cells but may find longer paths
+- **A***: Explores more cells but always finds the shortest path
+
 ## Adversarial Search
 
 In adversarial search, multiple agents have conflicting goals. This is common in games where one player's gain is another's loss (zero-sum games).
