@@ -4,6 +4,32 @@
 
 This repository contains the implementation of search algorithms discussed in CS50's Introduction to Artificial Intelligence course. The focus is on various search techniques used to solve problems where an agent needs to find a path from an initial state to a goal state.
 
+## 🎬 Demo Video
+
+Watch the interactive pathfinding game in action! This demo shows how you can visualize and compare different search algorithms in real-time.
+
+<div align="center">
+
+**Watch the Path Finding Game Visualization in action:**
+
+https://github.com/user-attachments/assets/9e91c0b5-0529-4977-8966-4deaefff4017
+
+*Click the image above to watch the full demonstration video for the Path Finding Game 
+
+</div>
+
+**Features demonstrated in the video:**
+- Interactive grid creation with walls and obstacles
+- Real-time visualization of Greedy Best-First Search
+- Real-time visualization of A* Search
+- Live comparison of algorithm performance
+- Step-by-step exploration visualization
+
+**Try it yourself:**
+```bash
+python pathfinding_game.py
+```
+
 ## Artificial Intelligence
 
 Artificial Intelligence involves creating systems that can perform tasks that typically require human intelligence. In the context of search problems, AI agents must make decisions about which actions to take to reach their objectives efficiently.
